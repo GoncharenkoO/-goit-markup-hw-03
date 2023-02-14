@@ -1,0 +1,110 @@
+:root {
+	--main-white-color: #fff;
+	--main-font: "Roboto", sans-serif;
+	--secondary-font: "Raleway", sans-serif;
+	--primary-color-text: #2e2f42;
+	--secondary-color-text: #434455;
+	--text-cloud-color: #f4f4fd;
+	--text-cornflower-color: #e7e9fc;
+	--iris-color: #4d5ae5;
+	--ocean-color: #404bbf;
+	--btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+body {
+	background-color: var(--main-white-color);
+	font-family: var(--main-font);
+	color: var(--primary-color-text);
+}
+
+.list {
+	list-style: none;
+}
+
+.decor {
+	text-decoration: none;
+}
+
+.logo {
+	font-family: var(--secondary-font);
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.3; /* 24/18 */
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: var(--iris-color);
+}
+.logo span {
+	color: var(--primary-color-text);
+}
+.nav-header .link {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
+	letter-spacing: 0.02em;
+
+	color: var(--primary-color-text);
+}
+.nav-header .link:hover,
+.nav-header .link:hover {
+	color: var(--ocean-color);
+}
+.nav-header .link.current {
+	color: var(--ocean-color);
+}
+.contacts-header .link {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
+	letter-spacing: 0.02em;
+
+	color: var(--secondary-color-text);
+}
+.contacts-header .link:hover,
+.contacts-header .link:hover {
+	color: var(--ocean-color);
+}
+.footer-page {
+	background-color: var(--primary-color-text);
+}
+.footer-logo {
+	width: 44px;
+	height: 24px;
+	font-family: var(--secondary-font);
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.17; /* 21/18 */
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: var(--iris-color);
+}
+.footer-logo span {
+	color: var(--text-cloud-color);
+}
+.footer-text {
+	font-family: var(--main-font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
+	letter-spacing: 0.02em;
+
+	color: var(--text-cornflower-color);
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}

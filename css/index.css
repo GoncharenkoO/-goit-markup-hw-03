@@ -1,0 +1,70 @@
+.hero {
+	background-color: var(--primary-color-text);
+}
+.hero-title {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.07; /* 60/56 */
+	text-align: center;
+	letter-spacing: 0.02em;
+
+	color: var(--main-white-color);
+}
+.btn {
+	font-family: var(--main-font);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
+	letter-spacing: 0.04em;
+	color: var(--main-white-color);
+	background-color: var(--iris-color);
+	border-radius: 4px;
+	border: transparent;
+	cursor: pointer;
+}
+.btn.primary {
+	width: 169px;
+	height: 56px;
+	box-shadow: var(--btn-shadow);
+}
+.btn.primary:hover,
+.btn.primary:focus {
+	background-color: var(--ocean-color);
+}
+.section-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.1; /* 40/36 */
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+}
+.advantages-list .title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2; /* 24/20 */
+	letter-spacing: 0.02em;
+}
+.advantages-list .text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
+	letter-spacing: 0.02em;
+	color: var(--secondary-color-text);
+}
+.team {
+	background-color: var(--text-cloud-color);
+}
+.team .title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2; /* 24/20 */
+	letter-spacing: 0.02em;
+}
+.team .text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5; /* 24/16 */
+	letter-spacing: 0.02em;
+	color: var(--secondary-color-text);
+}
