@@ -9,6 +9,9 @@
 	--iris-color: #4d5ae5;
 	--ocean-color: #404bbf;
 	--btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	--team-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+		0px 2px 1px rgba(46, 47, 66, 0.08);
+    --btn-filter: box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 body {
@@ -16,15 +19,46 @@ body {
 	font-family: var(--main-font);
 	color: var(--primary-color-text);
 }
-
-.list {
+ul {
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.container {
+	width: 1128px;
+	padding: 0 15px;
+	margin: 0 auto;
+	outline: 2px solid tomato;
+}
 .decor {
 	text-decoration: none;
 }
 
+.page-header {
+	border-bottom: 1px solid var(--text-cornflower-color);
+}
 .logo {
 	font-family: var(--secondary-font);
 	font-weight: 800;
@@ -36,10 +70,10 @@ body {
 
 	color: var(--iris-color);
 }
-.logo span {
+.logo .sign {
 	color: var(--primary-color-text);
 }
-.nav-header .link {
+.nav-list .link {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5; /* 24/16 */
@@ -47,14 +81,14 @@ body {
 
 	color: var(--primary-color-text);
 }
-.nav-header .link:hover,
-.nav-header .link:hover {
+.nav-list .link:hover,
+.nav-list .link:hover {
 	color: var(--ocean-color);
 }
-.nav-header .link.current {
+.nav-list .link.current {
 	color: var(--ocean-color);
 }
-.contacts-header .link {
+.contacts-list .link {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -63,12 +97,14 @@ body {
 
 	color: var(--secondary-color-text);
 }
-.contacts-header .link:hover,
-.contacts-header .link:hover {
+.contacts-list .link:hover,
+.contacts-list .link:hover {
 	color: var(--ocean-color);
 }
+
 .footer-page {
 	background-color: var(--primary-color-text);
+	padding: 100px 0;
 }
 .footer-logo {
 	width: 44px;
@@ -83,7 +119,7 @@ body {
 
 	color: var(--iris-color);
 }
-.footer-logo span {
+.footer-logo .sign {
 	color: var(--text-cloud-color);
 }
 .footer-text {
@@ -92,19 +128,7 @@ body {
 	font-size: 16px;
 	line-height: 1.5; /* 24/16 */
 	letter-spacing: 0.02em;
+	width: 264px;
 
 	color: var(--text-cornflower-color);
-}
-
-.visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
 }

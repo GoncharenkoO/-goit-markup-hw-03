@@ -1,3 +1,6 @@
+.section.portfolio {
+	padding: 96px 0 120px;
+}
 .portfolio-title {
 	font-weight: 700;
 	font-size: 56px;
@@ -22,6 +25,13 @@
 .button:focus {
 	color: var(--main-white-color);
 	background-color: var(--ocean-color);
+	box-shadow: var(--btn-filter);
+}
+.filter-list {
+	margin-bottom: 72px;
+}
+.projects-item {
+	border-bottom: 1px solid var(--text-cornflower-color);
 }
 .projects-list .title {
 	font-weight: 500;
