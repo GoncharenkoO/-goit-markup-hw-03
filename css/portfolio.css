@@ -9,18 +9,18 @@
 }
 .filter-list {
 	display: flex;
-  justify-content: center;
-  align-items: center;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 72px;
 }
 .filter-item:not(:last-child) {
-	margin-right: 24px;
+	margin-right: var(--card-gap);
 }
 .button {
 	min-width: 69px;
-	padding: 12px 24px;
-	border: 1px solid var(--text-cornflower-color);
-	border-radius: 4px;
+	padding: 12px var(--card-gap);
+	border: var(--border-value);
+	border-radius: var(--radius);
 
 	font-family: var(--main-font);
 	font-weight: 500;
@@ -34,23 +34,40 @@
 }
 .button:hover,
 .button:focus {
-  border: transparent;
+	border: transparent;
 	color: var(--main-white-color);
 	background-color: var(--ocean-color);
 	box-shadow: var(--btn-filter);
 }
 
-.projects-item {
-	border-bottom: 1px solid var(--text-cornflower-color);
+.projects-list {
+	display: flex;
+	flex-wrap: wrap;
 }
-.projects-list .title {
+.projects-item:not(:nth-child(3n)) {
+	margin-right: var(--card-gap);
+}
+.projects-item:not(:nth-last-child(-n + 3)) {
+	margin-bottom: var(--card-gap);
+}
+.card {
+	border-radius: var(--radius);
+	overflow: hidden;
+}
+.card-content {
+	padding: 32px 16px;
+	border: var(--border-value);
+}
+.card-content > .title {
+	margin-bottom: 8px;
+
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2; /* 24/20 */
 	letter-spacing: 0.02em;
 	color: var(--primary-color-text);
 }
-.projects-list .text {
+.card-content > .text {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5; /* 24/16 */
