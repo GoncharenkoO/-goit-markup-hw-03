@@ -20,7 +20,6 @@
 	min-width: 69px;
 	padding: 12px var(--card-gap);
 	border: var(--border-value);
-	border-radius: var(--radius);
 
 	font-family: var(--main-font);
 	font-weight: 500;
@@ -29,8 +28,6 @@
 	letter-spacing: 0.04em;
 	color: var(--iris-color);
 	background-color: var(--text-cloud-color);
-
-	cursor: pointer;
 }
 .button:hover,
 .button:focus {

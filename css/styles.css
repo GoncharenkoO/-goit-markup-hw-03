@@ -23,7 +23,8 @@ body {
 	background-color: var(--main-white-color);
 	color: var(--primary-color-text);
 }
-ul {
+ul,
+ol {
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -47,6 +48,14 @@ address {
 	font-style: normal;
 	margin-left: auto;
 }
+button {
+  display: block;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.decor {
+	text-decoration: none;
+}
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -64,11 +73,11 @@ address {
 	padding: 0 15px;
 	margin: 0 auto;
 }
-.decor {
-	text-decoration: none;
-}
 .centered {
 	text-align: center;
+}
+.section {
+  padding: 120px 0;
 }
 
 .page-header {

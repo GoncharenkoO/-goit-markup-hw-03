@@ -15,7 +15,7 @@
 .btn {
 	min-width: 169px;
 	padding: 16px 32px;
-	border-radius: var(--radius);
+	margin: 0 auto;
 	border: transparent;
 
 	font-family: var(--main-font);
@@ -27,7 +27,6 @@
 	color: var(--main-white-color);
 
 	box-shadow: var(--btn-shadow);
-	cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
@@ -43,11 +42,6 @@
 	letter-spacing: 0.02em;
 
 	text-transform: capitalize;
-}
-
-.section.advantages,
-.section.team {
-	padding: 120px 0;
 }
 .advantages-list {
 	display: flex;
@@ -80,7 +74,7 @@
 }
 
 .section.technologies {
-	padding-bottom: 120px;
+	padding-top: 0;
 }
 .technologies-list {
 	display: flex;
